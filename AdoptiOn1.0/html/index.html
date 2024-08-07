@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <link rel="stylesheet" href="/AdoptiOn1.0/stylesPrincipal/style.css">
+
+    <title>AdoptiOn | Home</title>
+
+</head>
+<body>
+
+    <section id="fundo1" style="background-image: url('/AdoptiOn1.0/images/FundoHero.png');"> 
+    <header>
+        <div class="container">
+        <div id="logo">
+            <p>Logo</p>
+        </div>
+
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#nossos-pets"  class="scroll-link">
+                <li>Pets</li>
+            </a>
+            <a href="#">
+                <li>Saiba Mais</li>
+            </a>
+            <a href="#">
+                <li>Sobre Nós</li>
+            </a>
+        </ul>
+    </div>
+    </header>
+
+    <main>
+
+        <div id="titulo-hero">
+        <h1>Adopti<span class="cor">On</span></h1>
+        <h2 id="subtitulo">Lorem ipsum dolor</h2>
+        </div>
+    </section> <!-- Fecha Fundo -->
+
+
+    <!-- O que Fazemos -->
+    <section class="sobre">
+        <div class="interface">
+            <div class="flex">
+                <div class="img-sobre">
+                    <img  class="img"  src="/AdoptiOn1.0/images/img-sobre.png" alt="gatinho">
+                </div> <!--img sobre-->
+
+                <div class="txt-sobre">
+                    <h2>O que fazemos?</h2>
+                    <p>Somos um site que tem por principal  objetivo a adoção!
+                        Aqui, você pode escolher um bichinho para adotar e também registrar um animalzinho para que ele apareça aqui no site para ser adotado. Basta entrar em contato!</p>
+                </div><!--txt sobre-->
+
+            </div><!--flex-->
+        </div><!--interface-->
+
+    </section><!--O que Fazemos-->
+
+
+    <!--Nossos Pets-->
+
+    <section  id="nossos-pets"  class="swiper">
+
+
+        <div class="swiper-wrapper">
+
+            <!--Card 1-->
+            <div class="card gatos">
+                <div class="card_image">
+                    <img src="/AdoptiOn1.0/images/silhoutte catr 1.png" alt="gato-card">
+                </div> <!--card-image-->
+                <div class="card_content">
+                    <span class="card_title titulo-gatos">
+                        Gatos
+                    </span>
+                    <p class="card_text">
+                        São brincalhões, muito independentes, curiosos e conseguem ser teimosos, mas são também extremamente amigáveis e afetivos:
+                    </p>
+                    <button class="card_btn gatos-btn">Veja Mais</button>
+                </div>
+
+            </div> <!--card 1-->
+
+            <!--Card 2-->
+
+            <div class="card caes">
+                <div class="card_image">
+                    <img src="/AdoptiOn1.0/images/silhoutte dog 1.png" alt="gato-card">
+                </div> <!--card-image-->
+
+                <div class="card_content">
+                    <span class="card_title titulo-caes">
+                        Cães
+                    </span>
+                    <p class="card_text">
+                        São brincalhões, muito independentes, curiosos e conseguem ser teimosos, mas são também extremamente amigáveis e afetivos:
+                    </p>
+                    <button class="card_btn caes-btn">Veja Mais</button>
+                </div>
+
+            </div> <!--card 2-->
+
+            <!--Card 3-->
+
+            <div class="card roedores">
+                <div class="card_image">
+                    <img src="/AdoptiOn1.0/images/silhpoutte hamerti 1.png" alt="gato-card">
+                </div> <!--card-image-->
+
+                <div class="card_content">
+                    <span class="card_title titulo-roed">
+                        Roedores
+                    </span>
+                    <p class="card_text">
+                        São brincalhões, muito independentes, curiosos e conseguem ser teimosos, mas são também extremamente amigáveis e afetivos:
+                    </p>
+                    <button class="card_btn roed-btn">Veja Mais</button>
+                </div>
+
+            </div> <!--card 3-->
+
+            
+
+        </div> <!--Card-quebra-->
+        
+
+    </section>
+
+    
+
+   
+
+    </main>
+
+ 
+    <script>
+        
+         // Função para rolar suavemente até a âncora
+         document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+       
+    
+    
+    
+
+
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 1550px;
+    
+    
+}
+
+
+
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* --Imagem Fundo */
+
+#fundo1{
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    height: 735px;
+    
+}
+
+/* --Estilo Menu */
+
+header{
+    font-family: Montserrat;
+    font-weight: 600;
+    padding: 40px 4%;
+    color: #fcfcfc;
+    font-size: 20px;
+    margin-right: 40px;
+    
+
+    
+}
+
+.container{
+ 
+    max-width: 1280px;
+    margin: 0 auto;
+   
+
+}
+
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: #fefcfc;
+    text-decoration-line: none ;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s all;
+}
+
+
+/* --Estilo Hero */
+
+#titulo-hero{
+    line-height: 65px;
+    color: #fcfcfc;
+    margin-right: 60px;
+}
+
+h1{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 70px;
+   
+    
+}
+
+h1 .cor{
+    color: #f45a5a;
+}
+
+#subtitulo{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+}
+
+main{
+    text-align: center;
+    margin-top: 170px;
+
+}
+
+/* Estilo O que Fazemos*/
+
+
+
+section.sobre{
+    
+    padding: 40px 8%;
+    background-color: #f1f1f1;
+    
+   
+}
+
+.img{
+    width: 350px;
+}
+
+section.sobre .flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+
+}
+
+
+
+.sobre .txt-sobre h2{
+    font-family: Montserrat;
+    font-size: 40px;
+}
+
+.sobre .txt-sobre p{
+    font-family: Montserrat;
+    margin-top: 15px;
+    text-align: justify;
+    font-weight: 400;
+    
+}
+
+.sobre .img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+/* -- Estilo Pets*/
+
+.swiper{
+    width: 0 auto;
+    font-family: Montserrat;
+
+    margin-top: 30px;
+    margin-left: 60px;
+    
+}
+
+.swiper-wrapper{
+    
+    width: 100%;
+    height: 35em;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+    
+}
+
+.card{
+    width: 300px; 
+    max-width: 100%; 
+    height: 90%; 
+   
+    
+    border-radius: 50px;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2em 1em;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.gatos{
+    background-color: #FBECB7;
+}
+
+.roedores{
+    background-color: #B6E6FC;
+}
+
+.caes{
+    background-color: #FFCDC2;
+}
+
+
+
+.card_image{
+    width: 10em;
+    height: 12em;
+    padding: 3px;
+    margin-bottom: 2em;
+    
+}
+
+.card_image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.card_content{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+    position: relative;
+    top: .2em;
+}
+
+
+.titulo-gatos{
+    color: #D4A45B;
+}
+
+.titulo-caes{
+    color: #E27F69;
+}
+
+
+.titulo-roed{
+    color: #388B9D;
+
+}
+
+.card_text{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1em 1em;
+    font-style: italic;
+}
+
+.card_btn{
+    background-color:#D4A45B ;
+    color: #000000;
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 600;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+
+}
+
+
+.gatos-btn{
+
+    background-color:#D4A45B ;
+    color: #000000;
+
+}
+
+.caes-btn{
+
+    background-color:#E27F69 ;
+    color: #000000;
+
+}
+
+.roed-btn{
+
+    background-color:#388B9D ;
+    color: #000000;
+
+}
+
+.gatos-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color:#D4A45B;
+    transition: 0.3s all;
+}
+
+
+.caes-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color:#E27F69;
+    transition: 0.3s all;
+
+}
+
+.roed-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color:#388B9D;
+    transition: 0.3s all;
+}
